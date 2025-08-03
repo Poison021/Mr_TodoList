@@ -20,18 +20,19 @@ export default function TodoList() {
         لیست کارها
       </h2>
 
-      <div className="flex gap-2">
+      <div className="flex gap-2 flex-col items-center md:flex-row">
         <input
           type="text"
-          className="flex-grow bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-grow text-center w-full  bg-gray-800 border border-gray-700 rounded px-3 py-2 text-gray-200 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="کارهای مورد نظرت چیه؟"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleAdd()}
         />
+        
         <button
           onClick={handleAdd}
-          className="bg-blue-600 text-white px-3 md:px-5 py-2 rounded-md hover:bg-blue-700 transition flex items-center gap-2"
+          className="w-60 flex items-center   justify-center gap-2 bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition "
         >
           <FiPlus size={20} />
           افزودن
