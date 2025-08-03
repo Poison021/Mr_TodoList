@@ -31,7 +31,7 @@ export default function TodoList() {
         />
         <button
           onClick={handleAdd}
-          className="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition flex items-center gap-2"
+          className="bg-blue-600 text-white px-3 md:px-5 py-2 rounded-md hover:bg-blue-700 transition flex items-center gap-2"
         >
           <FiPlus size={20} />
           افزودن

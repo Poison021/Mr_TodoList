@@ -15,7 +15,7 @@ export default function App() {
           initial={{ x: -300, opacity: 0, rotate: 0 }}
           animate={{ x: -160, opacity: 1, rotate: [0, 2, -3, 0] }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          className="hidden md:block w-3xl h-auto top-10 left-10 select-none pointer-events-none fixed z-20"
+          className="hidden lg:block w-3xl h-auto top-10 left-10 select-none pointer-events-none fixed z-20"
           draggable={false}
         />
 
